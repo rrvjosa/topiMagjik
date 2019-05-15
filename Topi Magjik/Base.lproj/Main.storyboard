@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Topi_Magjik" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topiFillo" translatesAutoresizingMaskIntoConstraints="NO" id="VIX-Fy-7OQ">
+                                <rect key="frame" x="8" y="20" width="359" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="E6G-dd-916"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ta-bt-pIg">
+                                <rect key="frame" x="109" y="280" width="157" height="80"/>
+                                <color key="backgroundColor" red="1" green="0.71192428243582762" blue="0.46313930853621521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="UfC-4d-LEg"/>
+                                    <constraint firstAttribute="width" constant="157" id="bHj-6F-C9K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Luaj"/>
+                                <connections>
+                                    <action selector="btnLuaj:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9J3-SH-9Qh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VIX-Fy-7OQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4IM-oK-8JW"/>
+                            <constraint firstItem="VIX-Fy-7OQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="4W0-DK-nSF"/>
+                            <constraint firstItem="4ta-bt-pIg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rrc-ZS-Fsu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VIX-Fy-7OQ" secondAttribute="trailing" constant="8" id="lcr-U0-RUT"/>
+                            <constraint firstItem="4ta-bt-pIg" firstAttribute="top" secondItem="VIX-Fy-7OQ" secondAttribute="bottom" constant="10" id="mre-vv-SRi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fotoja" destination="VIX-Fy-7OQ" id="Z2X-hf-v8s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="topiFillo" width="460" height="412.5"/>
+    </resources>
+</document>
